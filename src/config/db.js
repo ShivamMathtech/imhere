@@ -9,4 +9,5 @@ const connectDb = async () => {
   }
 };
 
+connectDb();
 module.exports = mongoose;
