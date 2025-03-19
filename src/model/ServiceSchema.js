@@ -5,6 +5,10 @@ const ServiceRequestSchema = new mongoose.Schema({
     ref: "User",
     required: true,
   },
+  jobschema: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Job",
+  },
   provider: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
   serviceType: { type: String, required: true },
   description: { type: String },
